@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'war'
+}
+
+group 'awesome.site'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+def $servletApiVersion = '4.0.1'
+
+dependencies {
+
+    // SERVLET API
+	
+    // https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
+    providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version: $servletApiVersion
+
+    // https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl-api
+    implementation group: 'javax.servlet.jsp.jstl', name: 'jstl-api', version: '1.2'
+}
