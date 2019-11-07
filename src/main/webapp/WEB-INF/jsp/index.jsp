@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@ page contentType="text/html;charset=utf-8" %>
 
 <html lang="en">
 <head>
