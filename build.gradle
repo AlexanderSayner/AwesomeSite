@@ -8,6 +8,7 @@ buildscript {
 }
 
 apply plugin: 'java'
+apply plugin: 'maven'
 apply plugin: 'application'
 apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
@@ -16,17 +17,49 @@ apply plugin: 'io.spring.dependency-management'
 group 'awesome.site'
 version '1.0-SNAPSHOT'
 
+description = """Spring Boot Web JSP Example"""
+
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 mainClassName = 'awesome.site.Application'
 
-repositories {
-    mavenCentral()
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
 }
 
+repositories {
+    maven { url "https://repo.maven.apache.org/maven2" }
+}
+
+def $springBootVersion = '2.2.0.RELEASE'
+def $jstlVersion = '1.2'
+def $tomcatEmbedJasperVersion = '9.0.27'
+def $ecjVersion = '4.6.1'
+def $bootstrapVersion = '3.3.7'
+
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web")
-    compile("org.springframework.boot:spring-boot-starter-thymeleaf")
-    compile("org.springframework.boot:spring-boot-devtools")
-    testCompile("org.springframework.boot:spring-boot-starter-test")
+
+    // SPRING
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: $springBootVersion
+
+    // JSP
+
+    // https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/jstl-api
+    implementation group: 'javax.servlet', name: 'jstl', version: $jstlVersion
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-tomcat
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: $springBootVersion
+    // https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-jasper
+    implementation group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: $tomcatEmbedJasperVersion
+    // https://mvnrepository.com/artifact/org.eclipse.jdt.core.compiler/ecj
+    implementation group: 'org.eclipse.jdt.core.compiler', name: 'ecj', version: $ecjVersion
+
+    // Bootstrap
+
+    // https://mvnrepository.com/artifact/org.webjars/bootstrap
+    implementation group: 'org.webjars', name: 'bootstrap', version: $bootstrapVersion
+
+    // TEST
+    testImplementation "org.springframework.boot:spring-boot-starter-test"
 }
