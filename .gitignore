@@ -1,7 +1,20 @@
-/target/*
-/build/classes/*
-/build/generated/*
-/build/tmp/*
+# IDE settings
+.idea/
+
+# Gradle hash
+.gradle/
+
+# Gradle artifact
+/gradle/
+
+# Local libs
+.classpath
+
+# Compiled class folders
+/target/
+/build/classes/
+/build/generated/
+/build/tmp/
 
 # Compiled class file
 *.class
@@ -16,7 +29,7 @@
 .mtj.tmp/
 
 # Package Files #
-# *.jar
+# *.jar need for a deployment
 *.war
 *.nar
 *.ear
