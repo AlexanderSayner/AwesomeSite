@@ -1,0 +1,88 @@
+#theWall {
+    fill: rgb(249, 79, 17);
+    stroke-width: 10;
+    stroke: rgb(0, 0, 0);
+}
+
+#theRoof {
+    fill: lime;
+    stroke: black;
+    stroke-width: 10;
+}
+
+#Sun {
+    stroke: black;
+    stroke-width: 3;
+    fill: rgb(255, 31, 69);
+    filter: url(#blurFilter);
+}
+
+#Trunk {
+    fill: brown;
+    stroke: black;
+    stroke-width: 2;
+}
+
+#Foliage {
+    fill: green;
+    stroke: black;
+    stroke-width: 2
+}
+
+#Cloud {
+    fill: plum;
+    stroke: black;
+    stroke-width: 2;
+    filter: url(#shadowCloud);
+}
+
+#SkyBox {
+    fill: url(#SkyImagePattern);
+    stroke: black;
+}
+
+#Ground {
+    fill: url(#GroundImagePattern);
+    stroke: black;
+}
+
+#Horizon {
+    stroke: rgb(15, 3, 30);
+    stroke-width: 10;
+}
+
+#Glass {
+    fill: rgb(168, 241, 255);
+    stroke-width: 10;
+    stroke: rgb(0, 0, 0);
+}
+
+#narrowBorderGlass {
+    fill: rgb(168, 241, 255);
+    stroke-width: 3;
+    stroke: rgb(0, 0, 0);
+}
+
+#Door {
+    fill: rgb(249, 237, 114);
+    stroke-width: 10;
+    stroke: rgb(0, 0, 0);
+}
+
+#narrowLine {
+    stroke: rgb(15, 3, 30);
+    stroke-width: 4;
+}
+
+#Attic {
+    fill: rgb(119, 212, 230);
+    stroke: black;
+    stroke-width: 3;
+}
+
+#Smoke {
+    fill: rgb(145, 163, 166);
+    stroke: black;
+    stroke-width: 2;
+    filter: url(#shadowCloud);
+}

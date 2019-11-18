@@ -23,6 +23,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/clock">Clock</a></li>
                 <li class="active"><a href="/music">Music</a></li>
+                <li><a href="/svg">Svg</a></li>
             </ul>
         </div>
     </div>
