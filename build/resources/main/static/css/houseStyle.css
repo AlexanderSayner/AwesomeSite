@@ -20,7 +20,7 @@
 #Trunk {
     fill: brown;
     stroke: black;
-    stroke-width: 1;
+    stroke-width: 2;
 }
 
 #Foliage {
@@ -49,4 +49,40 @@
 #Horizon {
     stroke: rgb(15, 3, 30);
     stroke-width: 10;
+}
+
+#Glass {
+    fill: rgb(168, 241, 255);
+    stroke-width: 10;
+    stroke: rgb(0, 0, 0);
+}
+
+#narrowBorderGlass {
+    fill: rgb(168, 241, 255);
+    stroke-width: 3;
+    stroke: rgb(0, 0, 0);
+}
+
+#Door {
+    fill: rgb(249, 237, 114);
+    stroke-width: 10;
+    stroke: rgb(0, 0, 0);
+}
+
+#narrowLine {
+    stroke: rgb(15, 3, 30);
+    stroke-width: 4;
+}
+
+#Attic {
+    fill: rgb(119, 212, 230);
+    stroke: black;
+    stroke-width: 3;
+}
+
+#Smoke {
+    fill: rgb(145, 163, 166);
+    stroke: black;
+    stroke-width: 2;
+    filter: url(#shadowCloud);
 }

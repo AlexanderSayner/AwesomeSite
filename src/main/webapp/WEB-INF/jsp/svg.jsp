@@ -97,19 +97,19 @@
     <polygon id="theRoof" points="340,350 515,495 165,495"/>
 
     // Дверь
-    <rect id="theWall" x="200" y="520" width="60" height="130"/>
-    <rect id="theWall" x="210" y="530" width="40" height="40"/>
+    <rect id="Door" x="200" y="520" width="60" height="130"/>
+    <rect id="narrowBorderGlass" x="210" y="530" width="40" height="40"/>
 
-    <line id="Horizon" x1="210" y1="590" x2="220" y2="600"/>
+    <line id="narrowLine" x1="210" y1="590" x2="220" y2="600"/>
 
     // Окно
-    <rect id="theWall" x="340" y="530" width="90" height="90"/>
+    <rect id="Glass" x="340" y="530" width="90" height="90"/>
 
     <line id="Horizon" x1="340" y1="575" x2="430" y2="575"/>
     <line id="Horizon" x1="385" y1="530" x2="385" y2="620"/>
 
     // Чердак
-    <polygon id="Trunk" points="323,400 358,400 383,450 303,450"/>
+    <polygon id="Attic" points="323,400 358,400 383,450 303,450"/>
 
     // Забор
     <line id="Horizon" x1="20" y1="590" x2="165" y2="590"/>
@@ -120,6 +120,15 @@
 
     // Фундамент
     <line id="Horizon" x1="0" y1="675" x2="680" y2="675"/>
+
+    // Дымоход
+    <polygon id="Trunk" points="390,395 415,414 415,360 390,360"/>
+
+    // Дым
+    <ellipse id="Smoke" cx="410" cy="345" rx="20" ry="10"/>
+    <ellipse id="Smoke" cx="420" cy="315" rx="30" ry="13"/>
+    <ellipse id="Smoke" cx="435" cy="275" rx="40" ry="20"/>
+    <ellipse id="Smoke" cx="460" cy="235" rx="50" ry="25"/>
 
 </svg>
 </body>
