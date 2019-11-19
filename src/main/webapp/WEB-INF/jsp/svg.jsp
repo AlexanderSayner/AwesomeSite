@@ -7,7 +7,7 @@
     <title>Векторная картинка</title>
     <meta http-equiv="Content-Type" content="text/html; charset = utf-8">
     <link rel="stylesheet" type="text/css"
-          href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
+          href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/houseStyle.css" type="text/css">
     <script type="text/javascript" src="js/clock.js" charset="utf-8"></script>
