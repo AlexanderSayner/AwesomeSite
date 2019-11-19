@@ -8,7 +8,7 @@
     <title>Музыка</title>
 
     <link rel="stylesheet" type="text/css"
-          href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
+          href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- Include font -->
@@ -139,7 +139,7 @@
                     <img class="bandcamp-grey" src="amplitude/img/blackSoundCloud.svg"/>
                     <img class="bandcamp-white" src="amplitude/img/soundCloud.svg"/>
                 </a>
-                <span class="song-duration">3:16</span>
+                <span class="song-duration">6:50</span>
             </div>
 
             <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="2">
@@ -157,7 +157,7 @@
                     <img class="bandcamp-grey" src="amplitude/img/blackYoutube.svg"/>
                     <img class="bandcamp-white" src="amplitude/img/redYoutube.svg"/>
                 </a>
-                <span class="song-duration">3:32</span>
+                <span class="song-duration">3:08</span>
             </div>
 
         </div>

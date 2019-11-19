@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
 
     <link rel="stylesheet" type="text/css"
-          href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
+          href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
 
 </head>
 <body>
