@@ -1,0 +1,18 @@
+.large-box-left {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 50%;
+}
+
+.large-box-right {
+    margin:  0;
+    padding: 0;
+    float: right;
+    width: 50%;
+}
+
+img {
+    width: 100%;
+    margin: 0 0 -4px 0;
+}
